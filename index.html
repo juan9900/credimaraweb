@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
+  <meta name="DC.Language" scheme="RFC1766" content="Spanish">
+  <meta name="author" content="FV">
+  <meta name="description" content="Empresa líder en previsión funeraria a nivel nacional, reconocida por su responsabilidad y sensibilidad humana">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="funeraria, Credimara, funerarias en Maracaibo, planes funerarios, funerarias en Cabimas, funerarias en Falcón,servicios,planes funerarios">
+  <meta name="Resource-type" content="Document">
+  <meta name="Revisit-after" content="2 days">
+  <meta name="robots" content="All">
+  <title>Credimara</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://kit.fontawesome.com/819330974d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/scrollreveal.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="boton-arriba-contenedor">
+      <a href="#">
+        <div class="volver-arriba">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+      </a>
+    </div>
+    <div class="boton-arriba-contenedor" id="actualizacion-contacto">
+      <a href="#">
+        <div class="volver-arriba">
+          <i id="actualizacion-icono" class="fas fa-address-book"></i>
+        </div>
+      </a>
+    </div>
+    <nav class="mobile-nav">
+      <a href="#">INICIO</a>
+      <a href="./quienessomos.html">QUIENES SOMOS</a>
+      <a href="./exequiales.html">EXEQUIALES</a>
+      <a href="./personales.html">PLANES PERSONALES</a>
+      <a href="./familiares.html">PLANES FAMILIARES</a>
+      <a href="./empresariales.html">PLANES EMPRESARIALES</a>
+      <a href="./obituarios.html">OBITUARIOS</a>
+      <a href="./contacto.html">CONTACTO</a>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid header">
+        <div class="navbar-brand">
+          <img class="navbar-brand" src="./img/logo--.png" alt="logocredimara.png">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienessomos.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./exequiales.html">EXEQUIALES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                PLANES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./personales.html">PERSONALES</a></li>
+                <li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./familiares.html">FAMILIARES</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./empresariales.html">EMPRESARIALES</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./obituarios.html">OBITUARIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-team">ACTUALIZACIÓN DE DATOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hamburguer">
+        <div class="bar">
+
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="modal-team" tabindex="-1" role="dialog" aria-labelledby="modalteam-title" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalteam-title">¡ACTUALIZA TUS DATOS!</h5>
+            <button id="boton-x" type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="formulario-email" target="_blank" action="https://formsubmit.co/actualizacion@credimara.com.ve" method="POST">
+              <input type="hidden" name="_subject" value="Nueva Actualización de datos!">
+              <label for="">Nombre</label>
+              <input required name="Nombre" type="text">
+              <label for="">Teléfono</label>
+              <input required name="Teléfono" type="number"> <label for="">Cédula</label>
+              <input required name="Cédula" type="number">
+              <label for="">Email</label>
+              <input type="email" required name="Email">
+              <label for="">Comentarios</label>
+              <textarea name="Comentarios" id="" cols="30" rows="3"></textarea>
+              <input type="hidden" name="_next" value="https://credimara.com.ve/thankyou.html">
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div id="contenido-1">
+                <h2>TU PREVISIÓN</h2>
+                <h4>DE VIDA</h4>
+              </div>
+              <img src="./img/banner--1.jpg" class="splide__slide" alt="banner-1.jpg">
+            </li>
+            <li class="splide__slide">
+              <div class="contenido">
+                <h2>Somos protección,</h2>
+                <h4>bienestar y tranquilidad</h4>
+                <p>Disfruta el presente sabiendo <br> que tu futuro está protegido</p>
+              </div>
+              <img src="./img/banner1.jpg" class="splide__slide" alt="banner1.jpg">
+            </li>
+            <li class="splide__slide">
+              <div class="contenido2 ">
+                <h2>Contigo,</h2>
+                <div>
+                  <h4>cuando más lo necesitas</h4>
+                </div>
+                <p>Conoce nuestros planes y <br> cuenta con un respaldo seguro</p>
+              </div>
+              <img src="./img/banner2.jpg" class="splide__slide" alt="banner2.jpg">
+            </li>
+            <li class="splide__slide">
+              <div class="contenido3">
+                <h2>La verdadera fortaleza</h2>
+                <h3>se demuestra cuidando <br> a las personas que amas</h3>
+                <div class="boton">
+                  <a href="./contacto.html"><button>
+                      Afíliate ahora <br> y protege su futuro
+                    </button></a>
+                </div>
+              </div>
+              <img src="./img/banner3.jpg" class="splide__slide" alt="banner3.jpg">
+            </li>
+            <li class="splide__slide">
+              <div class="contenido4 d-flex flex-column">
+                <h3>Conoce nuestros</h3>
+                <h2>NUEVOS PLANES PERSONALES</h3>
+                  <h4>desde <span>$2</span> al mes</h4>
+                  <div class="boton">
+                    <a href="./personales.html"><button>
+                        Quiero saber más
+                      </button></a>
+                  </div>
+              </div>
+              <img src="./img/banner4.jpg" class="splide__slide" alt="banner4.jpg">
+            </li>
+
+          </ul>
+        </div>
+    </section>
+    <section class="nosotros">
+      <div class="container">
+        <div class="titulo">
+          <h2>SOBRE NOSOTROS</h2>
+        </div>
+        <div class="row" id="row-special">
+          <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-xl-3">
+            <div class="card" id="card-1">
+              <img src="./img/objetivo.png" alt="yoga.png">
+              <h4 class="card-title">Nuestra misión</h4>
+              <p class="card-text">Acompañar a una familia en el difícil momento de perder a un ser querido a través de planes de previsión funeraria que garanticen la digna prestación de los servicios exequiales correspondientes.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4  col-sm-12 col-xs-12 col-xl-3">
+            <div class="card card-inverse card-primary text-center" id="card-2">
+              <img src="./img/vision.png" alt="cardio.png">
+              <h4 class="card-title">Nuestra visión</h4>
+              <p class="card-text">Ser la empresa líder en previsión funeraria a nivel nacional, reconocida por su responsabilidad y sensibilidad humana a través de estrategias que permitan ampliar la cartera de afiliados.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4  col-sm-12 col-xs-12 col-xl-3">
+            <div class="card card-inverse card-primary text-center" id="card-3">
+              <img src="./img/corazon.png" alt="levantar.png">
+              <h4 class="card-title">Nuestros valores</h4>
+              <p class="card-text" id="valores">Honestidad, profesionalismo, responsabilidad, igualdad y solidaridad, son los valores que identifican la labor que realiza Credimara día a día.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="planes">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="imagen-manos">
+              <img src="./img/manos.webp" alt="manos.webp">
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="titulo-años">
+              <p>34 años siendo vanguardia</p>
+              <span>en previsión familiar y empresarial</span>
+            </div>
+            <div class="texto-años">
+              <p>- Afiliados a la Cámara Nacional de Empresas Funerarias y de Cementerios (CANADEFU), organización que cuenta con más de 450 empresas afiliadas a nivel nacional, debidamente constituidos y organizados, lo cual garantiza la cobertura en todo el territorio nacional.</p>
+              <p>- Más de 21.682 trabajadores han depositado su confianza en nosotros, que unidos a su grupo familiar, protege a más de 130.000 venezolanos.</p>
+              <p>- Un total de 171 empresas, instituciones y organizaciones públicas y privadas (convenio colectivos directos o indirectos vía pago domiciliado).</p>
+              <p>- Contamos con sede administrativa propia y la más moderna capilla velatoria de la ciudad de Maracaibo, la cual cuenta con 800 m2 y siete salas velatorias, incluyendo sala infantil y sala para personas que no profesan religión alguna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="razones">
+      <div class="container">
+        <div class="titulo">
+          <h2>Razones para confiar en nosotros</h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="logo-razones">
+              <img src="./img/funeral.png" alt="funeral.png">
+              <div class="texto-razones" id="razones-1">
+                <span>Evita que el cliente tome decisiones en momentos emocionalmente complicados.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="logo-razones">
+              <img src="./img/calidad.png" alt="calidad.png">
+              <div class="texto-razones">
+                <span>Posee atención personalizada las 24 horas los 365 días del año.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="logo-razones">
+              <img src="./img/calma.webp" alt="calma.webp">
+              <div class="texto-razones">
+                <span>Le brinda tranquilidad a la familia en los momentos más difíciles.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="logo-razones">
+              <img src="./img/clasificacion.webp" alt="clasificacion.webp">
+              <div class="texto-razones">
+                <span>Es una empresa con más de 33 años de trayectoria.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="logo-razones">
+              <img src="./img/cadenas.webp" alt="cadenas.webp">
+              <div class="texto-razones" id="razones-text">
+                <span>Está vinculada a más de 450 empresas funerarias y cementerios a nivel nacional.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="logo-razones">
+              <img src="./img/mundo.png" alt="mundo.png">
+              <div class="texto-razones">
+                <span>Se encuentra afiliado a 6 bancos nacionales, ofreciendo amplias formas de pago.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonios">
+      <div class="titulo">
+        <h4>TESTIMONIOS</h4>
+      </div>
+      <div class="container">
+        <div id="card-slider" class="splide">
+          <div class="splide__track" id="splide_trackk">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide__slide__containerr">
+                  <img src="./img/testimonio.png">
+                  <h4>Marie Carolina
+                    Briceño</h4>
+                  <div class="texto">
+                    <span>Buenas tardes, Sr Rossel Alvarado. Le saluda Marie Carolina Briceño. Actualmente estoy afiliada a uno de los planes de servicios funerarios que ustedes ofrecen. De ante mano quiero darles gracias por todo el apoyo que he recibido de la empresa en este momento de duelo familiar. He sido muy bien atendida por Credimara.</span>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide__slide__container">
+                  <img src="./img/testimonio.png">
+                  <h4>María Briceño</h4>
+                  <div class="texto">
+                    <span>En nombre de la familia Piña Lugo, queremos agradecer el apoyo y la atención recibida en los momentos difíciles que vivimos con la partida de nuestro padre y tío Alejandro Piña. En Credimara le agradecemos principalmente al Sr. Rossel Alvarado, también a Crematorios Paraíso por sus atenciones y excelente trato, principalmente a la Srta. Yubelkis. Cuentan con agradables y confortables instalaciones.</span>
+                  </div>
+
+                  <div>
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <div class="boton-testimonios">
+        <button>Ver todos los testimonios</button>
+      </div>
+    </section>
+    <section class="compromiso">
+      <div class="container">
+        <div class="texto-compromiso">
+          <span>TU PREVISIÓN DE VIDA</span>
+        </div>
+      </div>
+    </section>
+    <section class="formulario">
+      <div class="container">
+        <div class="text-center actualiza-datos">
+          <h4>¡ACTUALIZA TUS DATOS!</h4>
+          <button data-bs-toggle="modal" data-bs-target="#modal-team">¡HAZ CLICK AQUÍ!</button>
+
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="texto-footer">
+        <span>Calle 78 entre Av. 26 y 26D - Sector Sta. María</span>
+        <span>Servicio 24/7 Llámanos al:</span>
+        <span> 0261 - 6140365 - 0412 - 1054152 - 0424 - 6051705</span>
+        <span>info@credimara.com.ve</span>
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/credimara/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/credimara"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/credimara/"> <i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-texto">
+      <span>2021, Credimara | Copyright © Desarrollado por <a target="_blank" href="https://mdnpublicidad.com/">MDN PUBLICIDAD</a></span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="./js/carrusel.js"></script>
+  <script src="./js/carusel2.js"></script>
+  <script src="./js/sticky-menu.js"></script>
+  <script src="./js/volverArriba.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="./js/popup.js"></script>
+  <script src="./js/hamburguerMenu.js"></script>
+</body>
+
+</html>

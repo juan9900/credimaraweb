@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
+  <meta name="DC.Language" scheme="RFC1766" content="Spanish">
+  <meta name="author" content="Fv">
+  <meta name="description" content="Empresa líder en previsión funeraria a nivel nacional, reconocida por su responsabilidad y sensibilidad humana">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="funeraria, Credimara, funerarias en Maracaibo, planes funerarios, funerarias en Cabimas, funerarias en Falcón,servicios,planes funerarios">
+  <meta name="Resource-type" content="Document">
+  <meta name="Revisit-after" content="2 days">
+  <meta name="robots" content="All">
+  <title>Credimara | Planes</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://kit.fontawesome.com/819330974d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styleplanes.css">
+  <script src="./js/scrollreveal.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+</head>
+
+<body>
+  <div class="planes-empresariales">
+    <header>
+      <div class="boton-arriba-contenedor">
+        <a href="#">
+          <div class="volver-arriba">
+            <i class="fas fa-chevron-up"></i>
+          </div>
+        </a>
+      </div>
+      <nav class="mobile-nav">
+        <a href="./index.html">INICIO</a>
+        <a href="./quienessomos.html">QUIENES SOMOS</a>
+        <a href="./exequiales.html">EXEQUIALES</a>
+        <a href="./personales.html">PLANES PERSONALES</a>
+        <a href="./familiares.html">PLANES FAMILIARES</a>
+        <a href="#">PLANES EMPRESARIALES</a>
+        <a href="./obituarios.html">OBITUARIOS</a>
+        <a href="./contacto.html">CONTACTO</a>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid header">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./quienessomos.html">QUIÉNES SOMOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./exequiales.html">EXEQUIALES</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PLANES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./personales.html">PERSONALES</a></li>
+                  <li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="./familiares.html">FAMILIARES</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="./empresariales.html">EMPRESARIALES</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./obituarios.html">OBITUARIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal-team">ACTUALIZACIÓN DE DATOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hamburguer">
+          <div class="bar">
+
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="modal fade" id="modal-team" tabindex="-1" role="dialog" aria-labelledby="modalteam-title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalteam-title">¡ACTUALIZA TUS DATOS!</h5>
+                <button id="boton-x" type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="formulario-email" target="_blank" action="https://formsubmit.co/actualizacion@credimara.com.ve" method="POST">
+                  <input type="hidden" name="_subject" value="Nueva Actualización de datos!">
+                  <label for="">Nombre</label>
+                  <input required name="Nombre" type="text">
+                  <label for="">Teléfono</label>
+                  <input required name="Teléfono" type="number">
+                  <label for="">Cédula</label>
+                  <input required name="Cédula" type="number">
+                  <label for="">Email</label>
+                  <input type="email" required name="Email">
+                  <label for="">Comentarios</label>
+                  <textarea name="Comentarios" id="" cols="3" rows="3"></textarea>
+                  <input type="hidden" name="_next" value="https://credimara.com.ve/thankyou.html">
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="titulo-empresariales">
+                  <h2>Planes empresariales</h2>
+                </div>
+                <div class="texto-empresariales">
+                  <p>Los planes tienen componentes comunes, sin embargo, existen beneficios adicionales en cada uno que serán detallados al momento de la contratación.
+                  </p>
+                  <p>Recuerde que cada plan posee beneficios adicionales que serán informados al momento de contratar.</p>
+                  <p>Cada persona que se afilia es un compromiso para demostrar quienes somos.</p>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="imagen-empresaria">
+                  <img src="./img/empresaria.png" alt="empresaria.png">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="compromiso">
+            <p>TU PREVISIÓN DE VIDA</p>
+          </div>
+        </section>
+      </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="texto-footer">
+        <span>Calle 78 entre Av. 26 y 26D - Sector Sta. María</span>
+        <span>Servicio 24/7 Llámanos al:</span>
+        <span> 0261 - 6140365 - 0412 - 1054152 - 0424 - 6051705</span>
+        <span>info@credimara.com.ve</span>
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/credimara/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/credimara"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/credimara/"> <i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-texto">
+      <span>2021, Credimara | Copyright © Desarrollado por <a target="_blank" href="https://mdnpublicidad.com/">MDN PUBLICIDAD</a></span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="./js/tabs.js"></script>
+  <script src="./js/sticky-menu.js"></script>
+  <script src="./js/volverArriba.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./js/hamburguerMenu.js"></script>
+</body>
+
+</html>

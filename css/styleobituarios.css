@@ -1,0 +1,472 @@
+@font-face {
+    font-family: 'Coolvetica-regular';
+    src: url('../fonts/CoolveticaBk-Regular.otf');
+}
+@font-face {
+    font-family: 'Coolvetica-hv';
+    src: url('../fonts/CoolveticaHv-Regular.otf');
+}
+@font-face {
+    font-family: 'Coolvetica-lt';
+    src: url('../fonts/CoolveticaLt-Regular.otf');
+}
+@font-face {
+    font-family: 'Coolvetica-bk';
+    src: url('../fonts/CoolveticaBk-Regular.otf');
+}
+@font-face {
+    font-family: 'Georema-rg';
+    src: url('../fonts/Georama-Regular.ttf');
+}
+/* Fin Fonts */
+.show{
+    transform: translateX(0px) !important;
+}
+.fondo{
+    background-color: #f6f6f6;
+}
+.active{
+    /* color: #be2124; */
+    background-color: #be2124;
+    color: white !important;
+    border-radius: 2rem;
+}
+#navbarNav{
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+.nav-item{
+    margin-right: 2rem;
+}
+#navbarNav a{
+    color: #132163 ;
+    font-family: 'Coolvetica-bk';
+    transition: all 0.3s ease-in-out;
+}
+#navbarNav a:hover{
+    background-color: #be2124;
+    color: white !important;
+    border-radius: 2rem;
+}
+/* Botón volver arriba */
+.boton-arriba-contenedor{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+.header.sticky{
+    width: 100%;
+    transition: 0.6s;
+    z-index: 99;
+    background-color: #ffff;
+    height: 6rem;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 30%);
+}
+
+.header{
+    position: fixed;
+    z-index: 999;
+    transition: 0.6s;
+}
+.navbar{
+    height: 4rem;
+    padding-top: 1rem;
+}
+.volver-arriba{
+    width: 0rem;
+    height: 0rem;
+    background-color: #EC4B4E;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transition: .2s;
+    transform: translate(-50%,50%);
+    transition: all 0.3s ease;
+    box-shadow: 0px 7px 30px black;
+}
+.volver-arriba:hover{
+    background-color:#132263 ;
+}
+.volver-arriba i{
+    position: absolute;
+    font-size: 1rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,50%) scale(0);
+    color: white;
+    transition: .2s;
+}
+.show{
+    z-index: 10;
+    transform: translateX(125px);
+}
+.show .volver-arriba{
+    animation: popop .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11;
+}
+.show i{
+    transform: translate(-50%,-50%) scale(1);
+}
+@keyframes popop {
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 2rem;
+        height: 2em;
+    }
+    100%{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.hamburguer{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    transform: translateX(320px);
+    z-index: 999999;
+    position: fixed;
+}
+.hamburguer .bar, .hamburguer:after,.hamburguer:before{
+content: '';
+display: block;
+width: 100%;
+height: 5px;
+background-color: black;
+margin: 6px 8px;
+transition: 0.4s;
+}
+.hamburguer.is-active:before{
+transform: rotate(-45deg) translate(-8px, 6px);
+
+}
+.hamburguer.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+    
+    }
+.hamburguer.is-active .bar{
+    opacity: 0;
+}
+.mobile-nav{
+    position: fixed;
+    display: block;
+    top: 73px;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: #ffff;
+    padding-top: 120px;
+    transition: all 0.3s ease-in-out;
+}
+.mobile-nav.is-active{
+    left: 0;
+}
+.mobile-nav a{
+    display: block;
+    margin: 0 auto 16px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: #c51720 ;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.mobile-nav a:hover{
+    background-color: #33D996 ;
+}
+
+.navbar-toggler{
+    display: none;
+}
+.titulo-obituario{
+    text-align: center;
+}
+.titulo-obituario h2{
+    color: #23336e;
+    font-family: 'Georema-rg';
+    font-weight: 700;
+}
+.search-filter{
+    padding: 1rem;
+    background: #be2224;
+    font-family: 'Coolvetica-bk';
+    color: #ffff;
+}
+.search-filter span{
+    margin-left: 7rem;
+}
+.card{
+    padding:1rem;
+    background-image: url('../img/fondoobituario--.jpg');
+    border: none !important;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Coolvetica-regular';
+    color: black;
+    background-size: cover;
+    background-position: center;
+}
+span.quien{
+    margin-bottom: 1rem ;
+}
+.card span,p{
+    opacity: 0.8;
+}
+.nombre-d{
+    margin-bottom: 1rem;
+    margin-top: 0.6rem;
+    font-family: 'Coolvetica-regular';
+    font-weight: 700;
+    opacity:  1 !important;
+    letter-spacing: 0.1rem;
+}
+.nombre-2{
+    font-weight: 700;
+}
+#card-1{
+    padding-bottom: 2rem !important;
+}
+#card-2{
+    padding-bottom: 2rem;
+}
+#card-3{
+    padding-bottom: 3rem;
+}
+#row-special{
+    justify-content: center;
+    padding-top: 2rem;
+}
+.card-title{
+    color: #132263;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Coolvetica-hv';
+
+  }
+  .card-text{
+    text-align: left;
+    font-size:0.8rem;
+    opacity:80%;
+    font-family: 'Georema-rg';
+
+  }
+
+  .card img{
+    width: 12rem;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .compromiso{
+      text-align: center;
+      margin-top: 1rem;
+      font-family: 'Coolvetica-bk';
+        color: #132263;
+        font-weight: 700;
+        font-size: 2rem;
+  }
+  .footer{
+    height: 13rem;
+    background-color: #b92121;
+  }
+.texto-footer{
+    text-align: center;
+    padding-top: 3rem;
+    font-family: 'Coolvetica-bk';
+
+}
+.texto-footer span{
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+}
+.redes-sociales{
+    padding-top: 1rem;
+}
+.redes-sociales i{
+    font-size: 1.6rem;
+    color: white;
+}
+input{
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.3rem;
+    position: relative;
+    z-index: 9;
+}
+/* button{
+    background-color: #1f5ef6;
+    padding: 0.3rem;
+    width: 6rem;
+    transform: translateX(-40px);
+    border: none;
+    border-radius: 2rem !important;
+} */
+.boton-search{
+    background-color: #1f5ef6;
+    padding: 0.3rem;
+    width: 6rem;
+    transform: translateX(-40px);
+    border: none;
+    border-radius: 2rem !important;
+}
+
+i{
+    color: #ffff;
+}
+.formulario-email{
+    display: flex;
+    flex-direction: column;
+  }
+  form.formulario-email {
+    margin-left: 0rem !important;
+  }
+  
+  .formulario-email input{
+    padding: 0.5rem;
+      border-radius: 50px 50px 50px 50px;
+      background-color: #BEBEBE;
+      border: #BEBEBE;
+      outline: none;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .formulario-email textarea{
+    padding: 0.5rem;
+      background-color: #BEBEBE;
+      border: #BEBEBE;
+      outline: none;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .formulario-email label{
+    font-family: 'Coolvetica-hv';    
+
+  }
+  .formulario-email button{
+
+    }
+    #button-modal {
+        padding: 1rem;
+        background: #132263;
+        border: none;
+        border-radius: 50px;
+        color: #ffff;
+        font-family: 'Coolvetica-hv';    
+    }
+  .modal-content{
+    background: #EDEDED !important;
+      padding: 20px 40px 20px 40px !important;
+      box-shadow: 2px 8px 23px 3px rgb(0 0 0 / 20%) !important;
+      border-radius: 20px 20px 20px 20px !important;
+  }
+  .modal-title{
+    font-size: 1.5rem;
+    font-family: 'Coolvetica-hv';    
+    line-height: 1.2rem !important;
+  }
+  #boton-x{
+    margin-top: 0rem !important;
+    border: none;
+    background:#BEBEBE;
+    width: 4rem;
+  }
+  .navbar-nav{
+    font-size: 0.9rem ;
+}
+.footer-texto{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb700;
+    font-family: 'Coolvetica-lt';
+}
+.footer-texto a{
+    color: black !important;
+    text-decoration: none;
+}
+@media screen and (min-width:1000px){
+    .hamburguer{
+        display: none;
+    }
+}
+@media screen and (max-width:700px){
+    .texto-footer{
+        padding-top: 1.1rem;
+    }
+    .fondo{
+        height: auto;
+    }
+    .compromiso{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .search-filter span{
+        margin-left: 0rem;
+    }
+}
+@media screen and (min-width:250px) and (max-width:360px){
+    input{
+        width: 10rem;
+    }
+    .footer{
+        height: 15rem;
+    }
+    .hamburguer{
+        transform: translateX(255px);
+    }
+    .mobile-nav{
+        padding-top: 64px;
+    }
+
+}
+@media screen and (min-width:701px) and (max-width:1024px){
+    .fondo{
+        height: auto;
+    }
+    .hamburguer{
+        transform: translateX(700px);
+      }
+}
+@media screen and (min-width:1500px){
+    .card span{
+        font-size: 1.2rem;
+    }
+    .card p{
+        font-size: 1.2rem;
+    }
+    .compromiso p{
+        font-size: 2.7rem;
+    }
+    .fondo{
+        height: auto;
+    }
+    .search-filter span{
+        font-size: 1.2rem;
+    }
+    .titulo-obituario{
+        font-size: 3rem;
+    }
+
+}
+

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Coolvetica-hv';
+    src: url('../fonts/CoolveticaHv-Regular.otf');
+}
+body{
+background-image: url('../img/fondo-anos.webp');
+height: 100vh !important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.texto-thank{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    flex-direction: column;
+    font-family: 'Coolvetica-hv';
+
+}
+button{
+    padding: 1rem;
+    color: #ffff;
+    width: 15rem;
+    background-color: #c51720;
+    border: none;
+    font-family: 'Coolvetica-hv';
+    border-radius: 50px;
+    cursor: pointer;
+}

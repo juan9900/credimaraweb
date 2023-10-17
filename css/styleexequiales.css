@@ -1,0 +1,578 @@
+@font-face {
+    font-family: 'Coolvetica-bk';
+    src: url('../fonts/CoolveticaBk-Regular.otf');
+}
+@font-face {
+    font-family: 'Coolvetica-hv';
+    src: url('../fonts/CoolveticaHv-Regular.otf');
+}
+@font-face {
+    font-family: 'Coolvetica-lt';
+    src: url('../fonts/CoolveticaLt-Regular.otf');
+}
+@font-face {
+    font-family: 'Coolvetica-italic';
+    src: url('../fonts/CoolveticaBk-Italic.otf');
+}
+@font-face {
+    font-family: 'Coolvetica-regular';
+    src: url('../fonts/CoolveticaBk-Regular.otf');
+}
+.show{
+    transform: translateX(0px) !important;
+}
+.active{
+    background-color: #be2124;;
+    color: white !important;
+    border-radius: 2rem;
+}
+#navbarNav{
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+.nav-item{
+    margin-right: 2rem;
+}
+#navbarNav a{
+    color: #132163 ;
+    font-family: 'Coolvetica-bk';
+    transition: all 0.3s ease-in-out;
+}
+#navbarNav a:hover{
+    background-color: #be2124;;
+    color: white !important;
+    border-radius: 2rem;
+}
+.fondo{
+    background-image: url('../img/fondo-exequiales.png');
+    height: 19rem;
+    background-size: cover;
+    background-position: center;
+}
+/* Botón volver arriba */
+.boton-arriba-contenedor{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+
+}
+.volver-arriba{
+    width: 0rem;
+    height: 0rem;
+    background-color: #EC4B4E;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transition: .2s;
+    transform: translate(-50%,50%);
+    transition: all 0.3s ease;
+    box-shadow: 0px 7px 30px black;
+}
+.volver-arriba:hover{
+    background-color:#132263 ;
+}
+.volver-arriba i{
+    position: absolute;
+    font-size: 1rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,50%) scale(0);
+    color: white;
+    transition: .2s;
+}
+.show-{
+    z-index: 10;
+    transform: translateX(125px);
+}
+.show- .volver-arriba{
+    animation: popop .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11;
+}
+.show- i{
+    transform: translate(-50%,-50%) scale(1);
+}
+@keyframes popop {
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 2rem;
+        height: 2em;
+    }
+    100%{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+/* Menú Hamburguesa */
+.hamburguer{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    transform: translateX(320px);
+    z-index: 999999;
+    position: fixed;
+}
+.hamburguer .bar, .hamburguer:after,.hamburguer:before{
+content: '';
+display: block;
+width: 100%;
+height: 5px;
+background-color: black;
+margin: 6px 8px;
+transition: 0.4s;
+}
+.hamburguer.is-active:before{
+transform: rotate(-45deg) translate(-8px, 6px);
+
+}
+.hamburguer.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+    
+    }
+.hamburguer.is-active .bar{
+    opacity: 0;
+}
+.mobile-nav{
+    position: fixed;
+    display: block;
+    top: 73px;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: #ffff;
+    padding-top: 120px;
+    transition: all 0.3s ease-in-out;
+}
+.mobile-nav.is-active{
+    left: 0;
+}
+.mobile-nav a{
+    display: block;
+    margin: 0 auto 16px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: #c51720 ;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.mobile-nav a:hover{
+    background-color: #33D996 ;
+}
+
+.navbar-toggler{
+    display: none;
+}
+
+.titulo-exequiales h2{
+    font-family: 'Coolvetica-hv';
+    color: #23336e;
+    padding-top: 4rem;
+}
+.texto-exequiales p{
+    font-family: 'Coolvetica-lt';
+    color: black;
+    text-align: justify;
+    font-weight: 600;
+}
+.fondo-instalaciones{
+    background-image: url('../img/fondo-instalaciones.png');
+    height: 45rem;
+    background-size: cover;
+    background-position: center;
+}
+.titulo-instalaciones{
+     color: #ffff;
+     font-family: 'Coolvetica-hv';
+}
+.footer{
+    height: 13rem;
+    background-color: #b92121;
+  }
+.texto-footer{
+    text-align: center;
+    padding-top: 3rem;
+    font-family: 'Coolvetica-bk';
+}
+.texto-footer span{
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+}
+.redes-sociales{
+    padding-top: 1rem;
+}
+.redes-sociales i{
+    font-size: 1.6rem;
+    color: white;
+}
+.titulo-contacto{
+    text-align: right;
+}
+.icono img{
+    width: 6rem;
+}
+.icono{
+    text-align: right;
+}
+.texto-icono{
+    text-align: right;
+}
+
+.titulo-contacto{
+    color: #be2224;
+    font-family: 'Coolvetica-hv';
+}
+.titulo-contacto h2{
+    font-size: 2rem;
+}
+.contacto-exequiales{
+    background-image: url('../img/quienessomos.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 44rem;
+}
+.texto-icono span{
+    font-size: 1.1rem;
+    color: black;
+    font-family: 'Coolvetica-bk';
+}
+.titulo-contacto{
+    padding-top: 2rem;
+}
+.frase{
+    padding-top: 3rem;
+    color: #132263;
+    font-size: 2rem;
+    opacity: 0.9;
+    font-weight: 700;
+    font-family: 'Coolvetica-bk';
+}
+.lupa img{
+    width: 27rem;
+    position: relative;
+    left: -8rem;
+}
+.titulo-instalaciones{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+/* Sticky Menú */
+.header.sticky{
+    width: 100%;
+    transition: 0.6s;
+    z-index: 999999;
+    background-color: #ffff;
+    height: 5rem;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 30%);
+}
+
+.header{
+    position: fixed;
+    z-index: 999;
+    transition: 0.6s;
+}
+.navbar{
+    height: 4rem;
+    padding-top: 1rem;
+}
+#expandedImg{
+    transition: 0.6s;
+}
+#imagenes{
+    padding-left: 3rem;
+}
+/* Fin Sticky Menú */
+.imagen-pequeña img{
+    width: 8.5rem;
+}
+.imagen-pequeña{
+    cursor: pointer;
+}
+#imagenes-abajo{
+    margin-top: 1rem;
+}
+.formulario-email{
+    display: flex;
+    flex-direction: column;
+  }
+  form.formulario-email {
+    margin-left: 0rem !important;
+  }
+  
+  .formulario-email input{
+    padding: 0.5rem;
+      border-radius: 50px 50px 50px 50px;
+      background-color: #BEBEBE;
+      border: #BEBEBE;
+      outline: none;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .formulario-email textarea{
+    padding: 0.5rem;
+      background-color: #BEBEBE;
+      border: #BEBEBE;
+      outline: none;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .formulario-email label{
+    font-family: 'Coolvetica-hv';    
+
+  }
+  .formulario-email button{
+        padding: 1rem;
+        background: #132263;
+        border: none;
+        border-radius: 50px;
+        color: #ffff;
+        font-family: 'Coolvetica-hv';    
+    }
+  .modal-content{
+    background: #EDEDED !important;
+      padding: 20px 40px 20px 40px !important;
+      box-shadow: 2px 8px 23px 3px rgb(0 0 0 / 20%) !important;
+      border-radius: 20px 20px 20px 20px !important;
+  }
+  .modal-title{
+    font-size: 1.5rem;
+    font-family: 'Coolvetica-hv';    
+    line-height: 1.2rem !important;
+  }
+  #boton-x{
+    margin-top: 0rem !important;
+    border: none;
+    background:#BEBEBE;
+    width: 4rem;
+
+  }
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100 !important;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+.navbar-nav{
+    font-size: 0.9rem ;
+}
+.footer-texto{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb700;
+    font-family: 'Coolvetica-lt';
+}
+.footer-texto a{
+    color: black !important;
+    text-decoration: none;
+}
+@media screen and (min-width:1000px){
+    .hamburguer{
+        display: none;
+    }
+}
+@media screen and (min-width:1400px) and (max-width:1499px){
+.fondo-instalaciones{
+    height: 45rem;
+}
+}
+/* MediaQueries */
+@media screen and (max-width:700px){
+    .fondo{
+        height: 31rem;
+    }
+    .titulo-instalaciones{
+        text-align: center;
+    }
+    .texto-exequiales p{
+        font-size: 1.2rem;
+    }
+    .lupa img{
+        display: none;
+    }
+    .titulo-contacto{
+        text-align: center;
+    }
+    .icono{
+        text-align: center;
+    }
+    .texto-icono{
+        text-align: center;
+    }
+    .texto-footer{
+        padding-top: 1.2rem;
+    }
+    .contacto-exequiales{
+        height: 48rem;
+    }
+    #imagenes{
+        text-align: center;
+        padding-left: 0rem;
+        margin-top: 3rem;
+    }
+    .imagen-pequeña img{
+        width: 5rem;
+    }
+    .fondo-instalaciones{
+        height: 49rem;
+    }
+}
+@media screen and (min-width:250px) and (max-width:360px){
+    .fondo{
+        height: 37rem;
+    }
+    .footer{
+        height: 15rem;
+    }
+    .hamburguer{
+        transform: translateX(255px);
+    }
+    .mobile-nav{
+        padding-top: 17px;
+    }
+}
+/* Tablets */
+@media screen and (min-width:701px) and (max-width:1023px){
+    .texto-exequiales p{
+        font-size: 1.2rem;
+    }
+    .fondo{
+        height: 23rem;
+    }
+    #tablet{
+        text-align: center;
+    }
+    #expandedImg {
+        width: 50% !important;
+    }
+    .imagen-pequeña img{
+        width: 8rem;
+    }
+    #imagenes{
+        margin-top: 2rem;
+    }
+    .fondo-instalaciones{
+        height: 58rem;
+    }
+    .lupa{
+        display: none;
+    }
+    .titulo-contacto{
+        text-align: center;
+    }
+    .icono{
+        text-align: center;
+    }
+    .texto-icono{
+        text-align: center;
+    }
+    .hamburguer{
+        transform: translateX(700px);
+      }
+}
+@media screen and (min-width:1024px) and (max-width:1200px){
+    .texto-exequiales p{
+        font-size: 1.2rem;
+    }
+    #imageness{
+        width: 50%;
+    }
+    .imagen-pequeña img{
+        width: 8rem;
+    }
+    #imagenes{
+        margin-top: 2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        text-align: center;
+    }
+    .titulo-instalaciones{
+        text-align: center;
+    }
+    .fondo-instalaciones{
+        height: 65rem;
+    }
+    .texto-icono{
+        text-align: center;
+    }
+    .icono{
+        text-align: center;
+    }
+    .titulo-contacto{
+        text-align: center;
+    }
+    .fondo{
+        height: 23rem;
+    }
+}
+@media screen and (min-width:1500px){
+    .fondo{
+        height: 26rem;
+    }
+    .titulo-exequiales h2{
+        font-size: 2.6rem;
+    }
+    .texto-exequiales {
+        font-size: 1.7rem;
+    }
+    .titulo-contacto h2 {
+        font-size: 2.7rem;
+    }
+    .texto-icono span{
+        font-size: 1.7rem;
+    }
+    .lupa img {
+        width: 32rem;
+        position: relative;
+        left: -20rem;
+    }
+    .frase{
+        font-size: 1.9rem;
+    }
+    .contacto-exequiales {
+        height: 52rem;
+    }
+    .fondo-instalaciones{
+        height: 44rem;
+    }
+    .content .content-overlay {
+        width: 83%;
+    }
+    .frase{
+        font-size: 2.7rem;
+    }
+}
+/* Pantallas extra-grande */
+@media screen and (min-width:2400px) {
+    .imagen-manos img{
+        left: -40rem;
+    }
+    .lupa img{
+        width: 33rem;
+        left:-40rem;
+    }
+}
