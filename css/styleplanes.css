@@ -2,35 +2,43 @@
   font-family: "Coolvetica-regular";
   src: url("../fonts/CoolveticaBk-Regular.otf");
 }
+
 @font-face {
   font-family: "Coolvetica-bk";
   src: url("../fonts/CoolveticaBk-Regular.otf");
 }
+
 @font-face {
   font-family: "Coolvetica-hv";
   src: url("../fonts/CoolveticaHv-Regular.otf");
 }
+
 @font-face {
   font-family: "Coolveticarg-regular";
   src: url("../fonts/coolvetica\ rg.ttf");
 }
+
 @font-face {
   font-family: "Coolvetica-italic";
   src: url("../fonts/CoolveticaBk-Italic.otf");
 }
+
 @font-face {
   font-family: "Coolvetica-lt";
   src: url("../fonts/CoolveticaLt-Regular.otf");
 }
+
 .show {
   transform: translateX(0px) !important;
 }
+
 .compromisox {
   height: 20vh;
   background-image: url(../img/fondo-manos.png);
   background-size: cover;
   background-position: center;
 }
+
 .texto-compromiso {
   display: flex;
   justify-content: center;
@@ -38,6 +46,7 @@
   align-items: center;
   text-align: center;
 }
+
 .texto-compromiso span {
   font-size: 2rem;
   color: #132263;
@@ -45,12 +54,14 @@
   font-weight: 700;
   font-family: "Coolvetica-bk";
 }
+
 .active {
   /* color: #be2124; */
   background-color: #be2124;
   color: white !important;
   border-radius: 2rem;
 }
+
 /* Botón volver arriba */
 .boton-arriba-contenedor {
   position: fixed;
@@ -73,9 +84,11 @@
   transition: all 0.3s ease;
   box-shadow: 0px 7px 30px black;
 }
+
 .volver-arriba:hover {
   background-color: #132263;
 }
+
 .volver-arriba i {
   position: absolute;
   font-size: 1rem;
@@ -85,33 +98,40 @@
   color: white;
   transition: 0.2s;
 }
+
 .show- {
   z-index: 10;
   transform: translateX(125px);
 }
+
 .show- .volver-arriba {
   animation: popop 0.3s ease-in-out;
   width: 4rem;
   height: 4rem;
   z-index: 11;
 }
+
 .show- i {
   transform: translate(-50%, -50%) scale(1);
 }
+
 @keyframes popop {
   0% {
     width: 0rem;
     height: 0rem;
   }
+
   50% {
     width: 2rem;
     height: 2em;
   }
+
   100% {
     width: 4rem;
     height: 4rem;
   }
 }
+
 .hamburguer {
   position: relative;
   display: block;
@@ -126,6 +146,7 @@
   position: fixed;
   padding-top: 2rem;
 }
+
 .hamburguer .bar,
 .hamburguer:after,
 .hamburguer:before {
@@ -137,15 +158,19 @@
   margin: 6px 8px;
   transition: 0.4s;
 }
+
 .hamburguer.is-active:before {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
+
 .hamburguer.is-active:after {
   transform: rotate(45deg) translate(-9px, -8px);
 }
+
 .hamburguer.is-active .bar {
   opacity: 0;
 }
+
 .mobile-nav {
   position: fixed;
   display: block;
@@ -158,9 +183,11 @@
   padding-top: 120px;
   transition: all 0.3s ease-in-out;
 }
+
 .mobile-nav.is-active {
   left: 0;
 }
+
 .mobile-nav a {
   display: block;
   margin: 0 auto 16px;
@@ -176,6 +203,7 @@
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
+
 .mobile-nav a:hover {
   background-color: #33d996;
 }
@@ -183,28 +211,34 @@
 .navbar-toggler {
   display: none;
 }
+
 #navbarNav {
   justify-content: flex-end;
   margin-right: 5rem;
 }
+
 .nav-item {
   margin-right: 2rem;
 }
+
 #navbarNav a {
   color: #132163;
   font-family: "Coolvetica-bk";
   transition: all 0.3s ease-in-out;
   border-radius: 2rem !important;
 }
+
 #navbarNav a:hover {
   background-color: #be2124;
   color: white !important;
   border-radius: 2rem;
 }
+
 #navbarNav {
   justify-content: flex-end;
   margin-right: 5rem;
 }
+
 [data-tab-content] {
   display: none;
 }
@@ -222,6 +256,7 @@
   font-family: "Coolvetica-hv";
   font-size: 0.8rem;
 }
+
 .tab {
   cursor: pointer;
   padding: 1rem;
@@ -235,74 +270,92 @@
   top: 3rem;
   z-index: 8;
 }
+
 li.tab {
   margin-top: 2rem;
 }
+
 li.tab:nth-child(1) {
   padding-top: 1.7rem;
   height: 6rem;
 }
+
 li.tab:nth-child(2) {
   padding-top: 1.7rem;
   height: 6rem;
 }
+
 li.tab:nth-child(3) {
   padding-top: 1.7rem;
   height: 6rem;
 }
+
 li.tab:nth-child(4) {
   padding-top: 1.7rem;
   height: 6rem;
 }
+
 li.tab:nth-child(5) {
   padding-top: 1.7rem;
   height: 6rem;
 }
+
 span#titulo-tab {
   font-size: 1.2rem;
 }
+
 .tab.active {
   background-color: #ffff;
   box-shadow: 0px 10px 20px black;
   color: #3b4b80 !important;
 }
+
 .texto-familiar {
   margin-left: 4rem;
 }
+
 .texto-familiar:last-child {
   margin-bottom: 0;
   padding-bottom: 1rem;
 }
+
 #texto-ultimo {
   width: 88%;
 }
+
 .texto-familiar p {
   font-family: "Coolvetica-bk";
   color: white;
   font-size: 1.2rem;
 }
+
 .texto-individuales p {
   font-family: "Coolvetica-bk";
   color: #ffff;
 }
+
 .texto-individuales h4 {
   font-family: "Coolveticarg-regular";
   color: #ffff;
   font-size: 1.6rem;
 }
+
 /* .tab:hover {
     /* background-color: #AAA; */
 */
-   /* Sticky Menu */
-   .header {
+
+/* Sticky Menu */
+.header {
   position: fixed;
   z-index: 999;
   transition: 0.6s;
 }
+
 .container-fluid {
   position: fixed;
   padding-top: 4rem;
 }
+
 .header.sticky {
   width: 100%;
   transition: 0.6s;
@@ -316,15 +369,18 @@ span#titulo-tab {
   font-family: "Coolvetica-hv";
   color: #3b4b80;
 }
+
 .titulo-planes {
   margin-top: 3rem;
   position: relative;
   z-index: -1;
 }
+
 .titulo-planes h2 {
   font-family: "Coolvetica-hv";
   color: #3b4b80;
 }
+
 .tab-content-familiar {
   background-image: url("../img/PLAN_FAMILIAR_BASICO.jpg");
   background-size: cover;
@@ -332,27 +388,28 @@ span#titulo-tab {
   height: auto;
   padding-top: 4rem;
 }
+
 .tab-content-nuevo4 {
   background-image: url("../img/PLAN_FAMILIAR_INTEGRAL.jpg");
   background-size: cover;
   background-position: center;
-  height: 109vh;
   padding-top: 4rem;
 }
+
 .tab-content-nuevo5 {
   background-image: url("../img/PLAN_FAMILIAR_DE_APOYO.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   padding-top: 4rem;
 }
+
 .tab-content-individuales {
   background-image: url("../img/PLAN_FAMILIAR_MUNICIPAL.jpg");
   background-size: cover;
   background-position: center;
-  height: 109vh;
   padding-top: 4rem;
 }
+
 .tab-content-empresarial {
   background-image: url("../img/PLAN_FAMILIAR_CREMACION.jpg");
   background-size: cover;
@@ -360,10 +417,8 @@ span#titulo-tab {
   height: auto;
   padding-top: 4rem;
 }
-.tab-content-empresarial p {
-  font-family: "Coolvetica-bk";
-  color: #ffff;
-}
+
+
 .tab-content-empresarial h4 {
   font-family: "Coolveticarg-regular";
   color: #ffff;
@@ -374,6 +429,7 @@ span#titulo-tab {
   background-position: center;
   background-size: cover;
 }
+
 .planes-empresariales {
   height: 100vh;
   background-image: url("../img/empresariales.png");
@@ -381,25 +437,30 @@ span#titulo-tab {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .titulo-empresariales {
   margin-top: 9rem;
 }
+
 .titulo-empresariales h2 {
   font-family: "Coolvetica-hv";
   color: #0e2263;
   font-size: 3rem;
   font-weight: 700;
 }
+
 .texto-empresariales p {
   font-family: "Coolvetica-bk";
   color: black;
   font-size: 1.1rem;
 }
+
 .imagen-empresaria {
   margin-top: 5rem;
   position: relative;
   z-index: -1;
 }
+
 .imagen-empresaria img {
   width: 26rem;
 }
@@ -409,29 +470,35 @@ span#titulo-tab {
   height: 14rem;
   background-color: #b92121;
 }
+
 .texto-footer {
   text-align: center;
   padding-top: 3rem;
   font-family: "Coolvetica-bk";
 }
+
 .texto-footer span {
   display: block;
   color: white;
   font-size: 1.2rem;
 }
+
 .redes-sociales {
   padding-top: 1rem;
 }
+
 .redes-sociales i {
   font-size: 1.6rem;
   color: white;
 }
+
 .compromiso {
   margin-top: 5.3rem;
   text-align: center;
   background-color: #b92121;
   padding: 0.3rem;
 }
+
 .compromiso p {
   font-family: "Coolvetica-bk";
   color: #ffff;
@@ -439,6 +506,7 @@ span#titulo-tab {
   font-weight: 700;
   text-align: center;
 }
+
 span#italic {
   font-style: italic;
 }
@@ -447,25 +515,31 @@ span#italic {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes fadeEffect {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .texto-empresariales {
   text-align: justify;
 }
+
 .formulario-email {
   display: flex;
   flex-direction: column;
 }
+
 form.formulario-email {
   margin-left: 0rem !important;
 }
@@ -479,6 +553,7 @@ form.formulario-email {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+
 .formulario-email textarea {
   padding: 0.5rem;
   background-color: #bebebe;
@@ -487,9 +562,11 @@ form.formulario-email {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+
 .formulario-email label {
   font-family: "Coolvetica-hv";
 }
+
 .formulario-email button {
   padding: 1rem;
   background: #132263;
@@ -498,32 +575,39 @@ form.formulario-email {
   color: #ffff;
   font-family: "Coolvetica-hv";
 }
+
 .modal-content {
   background: #ededed !important;
   padding: 20px 40px 20px 40px !important;
   box-shadow: 2px 8px 23px 3px rgb(0 0 0 / 20%) !important;
   border-radius: 20px 20px 20px 20px !important;
 }
+
 .modal-title {
   font-size: 1.5rem;
   font-family: "Coolvetica-hv";
   line-height: 1.2rem !important;
 }
+
 #boton-x {
   margin-top: 0rem !important;
   border: none;
   background: #bebebe;
   width: 4rem;
 }
+
 #actualizacion-contacto {
   bottom: 9rem;
 }
+
 #actualizacion-icono {
   font-size: 1.5rem;
 }
+
 .navbar-nav {
   font-size: 0.9rem;
 }
+
 .footer-texto {
   height: 3rem;
   display: flex;
@@ -532,165 +616,181 @@ form.formulario-email {
   background-color: #ffb700;
   font-family: "Coolvetica-lt";
 }
+
 .footer-texto a {
   color: black !important;
   text-decoration: none;
 }
+
 @media screen and (min-width: 1000px) {
   .hamburguer {
     display: none;
   }
 }
+
 /* Pantalla teléfono */
 @media screen and (max-width: 700px) {
   .tabs {
+    padding-bottom: 3rem;
     flex-wrap: wrap;
     margin-right: 3rem;
   }
+
   .tab {
     margin-top: 1rem;
   }
+
   .texto-familiar p {
     font-size: 1.2rem;
   }
+
   .texto-familiar {
     margin-left: 1rem;
   }
+
   .texto-individuales p {
     font-size: 1.2rem;
   }
-  .tab-content-empresarial p {
-    font-size: 1.2rem;
-  }
-  .tab-content-familiar {
-    height: 62rem;
-  }
-  .tab-content-nuevo4 {
-    height: 67rem;
-  }
-  .tab-content-empresarial {
-    height: 73rem;
-  }
-  .tab-content-individuales {
-    height: 70rem;
-  }
+
+
   .planes-empresariales {
     height: 71rem;
   }
+
   .imagen-empresaria {
     margin-top: 0rem;
     text-align: center;
   }
+
   .imagen-empresaria img {
     width: 19rem;
   }
+
   .compromiso {
     margin-top: 3.5rem;
   }
+
   .titulo-empresariales {
     margin-top: 4rem;
   }
+
   .texto-footer {
     padding-top: 1.6rem;
   }
+
   li.tab:nth-child(1) {
     padding-top: 0.4rem;
   }
+
   li.tab:nth-child(2) {
     padding-top: 0.4rem;
   }
+
   li.tab:nth-child(3) {
     padding-top: 0.4rem;
   }
+
   li.tab:nth-child(5) {
     padding-top: 0.4rem;
   }
+
   li.tab {
     margin-top: 1rem;
   }
+
   .texto-compromiso span {
     width: 79%;
     font-size: 1.3rem;
   }
 }
+
 /* Pantalla tablets */
 @media screen and (min-width: 701px) and (max-width: 1023px) {
-  .tab-content-familiar {
-    height: 48rem;
-  }
-  .tab-content-individuales {
-    height: 50rem;
-  }
-  .tab-content-empresarial {
-    height: 46rem;
-  }
+
 
   .titulo-empresariales {
     margin-top: 3rem;
   }
+
   .imagen-empresaria {
     text-align: center;
   }
+
   .hamburguer {
     transform: translateX(700px);
   }
+
   .tabs {
     font-size: 0.7rem;
     margin-right: 1rem;
   }
+
   .tab {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
+
   .tab-content-nuevo5 {
     height: 31rem;
   }
+
   .tab-content-nuevo4 {
     height: 50rem;
   }
+
   li.tab:nth-child(1) {
     height: 8rem;
   }
+
   li.tab:nth-child(2) {
     height: 8rem;
   }
+
   li.tab:nth-child(3) {
     height: 8rem;
   }
+
   li.tab:nth-child(4) {
     height: 8rem;
   }
+
   li.tab:nth-child(5) {
     height: 8rem;
   }
 }
+
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .tab-content-familiar {
-    height: 48rem;
-  }
   .tab-content-individuales {
     height: 50rem;
   }
+
   .tab-content-empresarial {
     height: auto;
   }
+
   .tab-content-nuevo4 {
     height: 50rem;
   }
+
   .tab-content-nuevo5 {
     height: 46rem;
   }
+
   .titulo-empresariales {
     margin-top: 4rem;
   }
+
   .texto-empresariales p {
     font-size: 1.2rem;
   }
+
   .imagen-empresaria {
     text-align: center;
   }
+
   .planes-empresariales {
     height: 72rem;
   }
+
   .tab {
     margin-right: 1.1rem;
   }
@@ -698,33 +798,35 @@ form.formulario-email {
 
 /* Pantallas pequeñas */
 @media screen and (min-width: 250px) and (max-width: 360px) {
-  .tab-content-familiar {
-    height: 63rem;
-  }
   .planes-empresariales {
     height: 74rem;
   }
+
   .footer {
     height: 15rem;
   }
+
   .hamburguer {
     transform: translateX(254px);
   }
-  .tab-content-familiar {
-    height: 68rem;
-  }
+
+
   .tab-content-individuales {
     height: 73rem;
   }
+
   .tab-content-nuevo4 {
     height: 73rem;
   }
+
   .tab-content-nuevo5 {
     height: 45rem;
   }
+
   #texto-ultimo {
     text-align: center;
   }
+
   .mobile-nav {
     padding-top: 17px;
   }
@@ -736,68 +838,90 @@ form.formulario-email {
     font-size: 1.2rem;
     margin-right: 0.8rem;
   }
+
   .texto-familiar h2 {
     font-size: 2.5rem;
   }
+
   .texto-familiar p {
     font-size: 1.3rem;
   }
+
   .texto-individuales h4 {
     font-size: 2.5rem;
   }
+
   .texto-individuales p {
     font-size: 1.7rem;
   }
+
   .tab-content-empresarial p {
     font-size: 1.3rem;
   }
+
   .tab-content-empresarial h4 {
     font-size: 2.4rem;
   }
+
   .imagen-empresaria img {
     width: 43rem !important;
   }
+
   .titulo-empresariales {
     width: 45rem;
   }
+
   .titulo-empresariales h2 {
     font-size: 4.2rem;
   }
+
   .titulo-empresariales {
     margin-top: 10rem;
   }
+
   .texto-empresariales p {
     font-size: 1.7rem;
   }
+
   .compromiso p {
     font-size: 2.7rem;
   }
+
   .titulo-planes h2 {
     font-size: 4rem;
   }
+
   span#titulo-tab {
     font-size: 1.7rem !important;
   }
+
   li.tab:nth-child(1) {
     height: 8rem;
   }
+
   li.tab:nth-child(2) {
     height: 8rem;
   }
+
   li.tab:nth-child(3) {
     height: 8rem;
   }
+
   li.tab:nth-child(4) {
     height: 8rem;
   }
+
   li.tab:nth-child(5) {
     height: 8rem;
   }
+
   .texto-compromiso span {
     font-size: 3.3rem;
   }
 }
-.check-container{
+
+.check-container {
+  flex-shrink: 0;
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
@@ -806,23 +930,113 @@ form.formulario-email {
   margin-right: 1.5rem;
 }
 
-.check-container i{
+.check-container i {
   font-size: 1.3em;
 }
 
-.plan-text{
+.plan-text {
   font-size: 1.2em;
 }
 
-.plan-list-container{
+.plan-list-container {
   margin: 3rem 0;
   padding-left: 3rem;
 }
 
-.plan-list-container h3{
+.plan-list-container h3 {
   font-weight: bold;
 }
 
-.plan-list li{
+.plan-list li {
   margin: 1rem 0;
+}
+
+.group-container {
+  width: 80%;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.plan-bottom-group div {
+  flex: 1;
+  text-align: center;
+  margin: 0 1rem;
+  position: relative;
+}
+
+@media (max-width:768px) {
+  .plan-list-container {
+    padding-left: 1rem;
+  }
+
+  .group-container {
+    width: 100%;
+  }
+
+  ul.plan-list {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.plan-bottom-group div.price-container {
+  position: absolute !important;
+  left: 100%;
+  bottom: 15%;
+  width: 7rem;
+  height: 7rem;
+  background: white;
+  border-radius: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.price-container p {
+  width: fit-content;
+  height: auto;
+  margin: 0;
+  z-index: 2;
+  line-height: 2rem;
+  color: #3B4C80;
+}
+
+.price-container::after {
+  content: "";
+  width: 3.5rem;
+  height: 3.5rem;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: .25rem;
+}
+
+.plan-pricing {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+@media (max-width:992px) {
+  .plan-bottom-group div.price-container {
+    position: static !important;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: auto;
+  }
+
+  .price-container::after {
+    display: none;
+    content: "";
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: .25rem;
+  }
 }
