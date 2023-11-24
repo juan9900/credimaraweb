@@ -180,7 +180,7 @@
   min-height: 100vh;
   z-index: 98;
   background-color: #ffff;
-  padding-top: 120px;
+  padding-top: 30px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -418,7 +418,6 @@ span#titulo-tab {
   padding-top: 4rem;
 }
 
-
 .tab-content-empresarial h4 {
   font-family: "Coolveticarg-regular";
   color: #ffff;
@@ -467,7 +466,6 @@ span#titulo-tab {
 
 /* Footer */
 .footer {
-  height: 14rem;
   background-color: #b92121;
 }
 
@@ -652,7 +650,6 @@ form.formulario-email {
     font-size: 1.2rem;
   }
 
-
   .planes-empresariales {
     height: 71rem;
   }
@@ -706,8 +703,6 @@ form.formulario-email {
 
 /* Pantalla tablets */
 @media screen and (min-width: 701px) and (max-width: 1023px) {
-
-
   .titulo-empresariales {
     margin-top: 3rem;
   }
@@ -809,7 +804,6 @@ form.formulario-email {
   .hamburguer {
     transform: translateX(254px);
   }
-
 
   .tab-content-individuales {
     height: 73rem;
@@ -964,7 +958,7 @@ form.formulario-email {
   position: relative;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .plan-list-container {
     padding-left: 1rem;
   }
@@ -1001,7 +995,7 @@ form.formulario-email {
   margin: 0;
   z-index: 2;
   line-height: 2rem;
-  color: #3B4C80;
+  color: #3b4c80;
 }
 
 .price-container::after {
@@ -1012,7 +1006,7 @@ form.formulario-email {
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom-left-radius: .25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .plan-pricing {
@@ -1020,7 +1014,7 @@ form.formulario-email {
   font-weight: 700;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .plan-bottom-group div.price-container {
     position: static !important;
     margin: 0 auto;
@@ -1037,6 +1031,6 @@ form.formulario-email {
     position: absolute;
     bottom: 0;
     left: 0;
-    border-bottom-left-radius: .25rem;
+    border-bottom-left-radius: 0.25rem;
   }
 }
