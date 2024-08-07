@@ -59,6 +59,7 @@
         <a href="./empresariales.html">PLANES EMPRESARIALES</a>
         <a href="./obituarios.html">OBITUARIOS</a>
         <a href="./contacto.html">CONTACTO</a>
+        <a href="./clubduelo.html">CLUB DE DUELO</a>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid header">
@@ -146,6 +147,9 @@
                 <li><a class="dropdown-item" href="./clientes.php?paga">PAGOS EN LÍNEA</a></li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./clubduelo.html">CLUB DE DUELO</a>
+            </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -231,10 +235,8 @@
       </div>
       <section class="planes">
         <ul class="tabs">
-          <li data-tab-target="#familiar" class="active tab">
-            <span id="titulo-tab">PLAN PREVISIÓN</span>
-          </li>
-          <li data-tab-target="#individuales" class="tab">
+          
+          <li data-tab-target="#individuales" class="active tab">
             <span id="titulo-tab">PLAN PREVISIÓN PLUS</span>
           </li>
           <li data-tab-target="#empresariales" class="tab">
@@ -251,189 +253,9 @@
           </li>
         </ul>
 
-        <div id="familiar" data-tab-content class="active">
-          <div class="tab-content-familiar pb-2">
-            <!-- <div class="container"> -->
-            <div>
-              <div class="plan-list-container">
-                <h3>Documentación y Trámites</h3>
-                <ul class="plan-list">
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">Documentación y diligencias de ley</p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container"></div>
-                    <p class="mb-0 plan-text">Oficios religiosos</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="plan-list-container">
-                <h3>Traslado - Carrozas</h3>
-                <ul class="plan-list">
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container"></div>
-                    <p class="mb-0 plan-text">
-                      Traslado del cuerpo a nivel regional
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container"></div>
-                    <p class="mb-0 plan-text">
-                      Traslado del cuerpo a nivel nacional
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Traslado desde lugar de suceso hasta lugar de
-                      sepultura/velación
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">Carro fúnebre</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="plan-list-container">
-                <h3>Servicios del Plan</h3>
-                <ul class="plan-list">
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">Cofre o Ataúd</p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container"></div>
-                    <p class="mb-0 plan-text">
-                      Suministro de la bóveda o cremación
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Suministro de la bóveda o cremación a nivel nacional
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Suministro de la bóveda en cementerio municipal
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Cremación a nivel regional (dentro del Edo. Zulia)
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Cremación a nivel nacional (ciudades que presten el servicio)
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Preparación del cuerpo 24h (solo fallecimiento natural)
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Velación en capilla ó domicilio 24h (Capilla autorizada por Credimara C,A.)
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="plan-list-container">
-                <h3>Ornametos y Extras</h3>
-                <ul class="plan-list">
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container"></div>
-                    <p class="mb-0 plan-text">
-                      Arreglo de flores naturales (1 unidad)
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Mobiliario para velación (sillas - 30 und) velación en domicilio
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Ornamento en residencia por 24h
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="plan-list-container">
-                <h3>Prestación de los Servicios</h3>
-                <ul class="plan-list">
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                      <i class="fas fa-check"></i>
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Cobertura a nivel Regional
-                    </p>
-                  </li>
-                  <li class="d-flex flex-row align-items-center">
-                    <div class="border check-container">
-                    </div>
-                    <p class="mb-0 plan-text">
-                      Cobertura a nivel Nacional
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="d-flex flex-column flex-lg-row justify-content-between group-container plan-bottom-group position-relative">
-                <div>
-                  <h3>Grupo Familiar</h3>
-                  <p>Padres hasta 80 años, cónyugue e hijos sin límite de edad.</p>
-                </div>
-                <div>
-                  <h3>Inicio de Cobertura</h3>
-                  <p>Posterior a 90 días desde el primer pago realizado.</p>
-                </div>
-                <div>
-                  <h3>Familiar Adicional</h3>
-                  <p>Hasta 60 años.</p>
-                </div>
-                <div class="price-container">
-                  <p class="plan-pricing">$5</p>
-                  <p>Mensuales</p>
-                </div>
-              </div>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
+        
 
-        <div id="individuales" data-tab-content>
+        <div id="individuales" data-tab-content class="active">
           <div class="tab-content-individuales">
             <!-- <div class="container"> -->
             <div>
